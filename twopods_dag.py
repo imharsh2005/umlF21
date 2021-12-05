@@ -32,7 +32,7 @@ volume_mount = k8s.V1VolumeMount(
 )
 
 passing = KubernetesPodOperator(namespace='airflow',
-                          image="kamalakar07/python-uml:latest",
+                          image="imharsh2005/python-uml:latest",
                           cmds=["bash","-c"],
                           arguments=["/run.sh"],
                           labels={"foo": "bar"},
